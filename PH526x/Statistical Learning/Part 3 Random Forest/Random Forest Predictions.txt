@@ -1,0 +1,11 @@
+One of the great features of the sklearn library is that there is a consistent framework for the workflow needed to use different statistical models.
+
+To do random forest regression, you use the following import:
+
+from sklearn.ensemble import RandomForestRegressor
+
+To do random forest classification, you use the following import:
+
+from sklearn.ensemble import RandomForestClassifier
+
+After importing the relevant model, everything proceeds in the same way as for linear and logistic regression as shown in the previous videos.
