@@ -8,3 +8,5 @@ ipympl
 nltk
 folium
 statsmodels
+sympy
+opencv-python
