@@ -26,7 +26,11 @@ def operations(h, w):
       s - the sum of A and B.
     """
     # Your code here
-    raise NotImplementedError
+    A = np.random.random([h, w])
+    B = np.random.random([h, w])
+    s = A + B
+
+    return A, B, s
 
 
 def norm(A, B):
@@ -41,7 +45,7 @@ def norm(A, B):
       s - the L2 norm of A+B.
     """
     # Your code here
-    raise NotImplementedError
+    return np.linalg.norm(A + B)
 
 
 def neural_network(inputs, weights):
@@ -56,7 +60,7 @@ def neural_network(inputs, weights):
       out - a 1 x 1 NumPy array, representing the output of the neural network
     """
     # Your code here
-    raise NotImplementedError
+    return np.tanh(np.dot(weights.T, inputs))
 
 
 def scalar_function(x, y):
