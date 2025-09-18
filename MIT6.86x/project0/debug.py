@@ -1,11 +1,17 @@
 def get_sum_metrics(predictions, metrics=[]):
     for i in range(3):
-        metrics.append(lambda x: x + i)
+        metrics.append(lambda x, i=i: x + i)
 
     sum_metrics = 0
+    count_metrics = len(metrics)
+    # print(f"Number of metrics: {count_metrics}")
     for metric in metrics:
+        # print("predictions:", predictions)
+        # print("Evaluating metric...", metric(predictions))
         sum_metrics += metric(predictions)
+        # print(f"Current sum: {sum_metrics}")
 
+    metrics.clear()  # Clear the list to avoid accumulation in subsequent calls
     return sum_metrics
 
 
