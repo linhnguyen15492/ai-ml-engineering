@@ -10,3 +10,5 @@ folium
 statsmodels
 sympy
 opencv-python
+tensorflow
+jax
