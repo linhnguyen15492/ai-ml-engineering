@@ -12,3 +12,5 @@ sympy
 opencv-python
 tensorflow
 jax
+networkx
+pydot
