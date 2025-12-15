@@ -1,0 +1,8 @@
+pytorch -c pytorch
+numpy
+matplotlib
+scipy
+tqdm
+scikit-learn
+torch
+torchvision
