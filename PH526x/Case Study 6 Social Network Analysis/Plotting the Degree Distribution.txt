@@ -1,0 +1,12 @@
+Important Note
+Most Python distributions available in 2018 and later include version 2.0 or higher of NetworkX. Version 2.0 of NetworkX introduced several significant changes. This version and higher versions behave differently from previous versions in certain areas.
+
+For this video...
+
+Note that G.degree() now returns a DegreeView object rather than a dictionary.
+In the video from 0:36-1:24, we used the following line of code:
+plt.hist(list(G.degree().values()), histtype="step”)
+The above line must be replaced with the following lines of code:
+
+degree_sequence = [d for n, d in G.degree()]
+plt.hist(degree_sequence, histtype="step")
